@@ -29,3 +29,4 @@ bike.turnkey = function() {
 }
 // FUNCTION AS A PROPERTY OF AN OBJECT IS KNOWN AS METHOD
 console.log(bike);
+bike.turnkey();
