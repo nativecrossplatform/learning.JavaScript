@@ -24,3 +24,8 @@ console.log(bike);
 
 console.log(bike.maker);
 console.log(bike["maker"]);
+bike.turnkey = function() {
+    console.log('Running')
+}
+// FUNCTION AS A PROPERTY OF AN OBJECT IS KNOWN AS METHOD
+console.log(bike);
