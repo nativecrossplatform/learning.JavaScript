@@ -7,4 +7,5 @@ for(var i =0;i<names.length;i++)
         console.log(names[i][j]);
     }
 }
-names[0].concat(" Smith")
+names[0] = names[0].concat(" Smith");
+console.log(names[0]);
