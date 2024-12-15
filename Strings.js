@@ -9,3 +9,19 @@ for(var i =0;i<names.length;i++)
 }
 names[0] = names[0].concat(" Smith");
 console.log(names[0]);
+/*
+More Methods:
+charAt() 
+
+concat() 
+
+indexOf() 
+
+lastIndexOf() 
+
+split() 
+
+toUpperCase() 
+
+toLowerCase()  
+*/
