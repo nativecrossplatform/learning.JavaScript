@@ -1,3 +1,10 @@
+// RANDOM METHODS
+
+console.log("----------Random Method----------")
+// Generates a random number between 0 and 0.99
+// If you want larger numbers multiply by appropriate constants.
+console.log(Math.random());
+
 // CONSTANTS
 
 console.log("----------Constants----------")
