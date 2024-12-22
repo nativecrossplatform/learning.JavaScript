@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nativecrossplatform/learning.JavaScript/issues"
   },
-  "homepage": "https://github.com/nativecrossplatform/learning.JavaScript#readme"
+  "homepage": "https://github.com/nativecrossplatform/learning.JavaScript#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
