@@ -21,3 +21,20 @@ catch(error)
 {
     console.log(error);
 }
+/*
+class CustomError extends Error {
+    constructor(message) {
+        super(message); // Pass the message to the parent Error class
+        this.name = "CustomError"; // Set a custom name
+    }
+}
+
+throw new CustomError("This is a custom error!");
+example of throwing custom error
+*/
+/*
+throwing error with arbitary values
+throw "This is a string error!";
+throw { code: 404, message: "Not Found" };
+throw 42;
+*/
