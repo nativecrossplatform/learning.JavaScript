@@ -1,0 +1,19 @@
+{
+  "name": "learning.javascript",
+  "version": "1.0.0",
+  "description": "The Repository To Practice/Learn JavaScript",
+  "main": "Array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nativecrossplatform/learning.JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nativecrossplatform/learning.JavaScript/issues"
+  },
+  "homepage": "https://github.com/nativecrossplatform/learning.JavaScript#readme"
+}
