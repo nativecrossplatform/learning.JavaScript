@@ -1,0 +1,21 @@
+{
+    "name": "Rajesh Kumar",
+    "age": 25,
+    "isStudent": true,
+    "skills": [
+      "Python",
+      "Data Analysis",
+      "Machine Learning"
+    ],
+    "address": {
+      "street": "456 MG Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "zip": "560001"
+    },
+    "preferences": {
+      "theme": "light",
+      "notifications": false
+    }
+  }
+  
