@@ -1,63 +1,103 @@
 /*
 
-Basic Operators:
+Operators are used to perform operations on values and variables. They are categorized into different types based on their functionality. Below is a detailed breakdown of the most commonly used operators in JavaScript.
 
--> Assignment Operator (=):
-Used to assign a value to something.
+*/
 
--> Arithmetic operators (+, -, *, /, %, **):
-+ -> Addition
-(When used to combine a string and a string, the addition operator acts as a concatenation operator and joins the two strings. If used on a number and a string, it will treat the number as a string and then concatenate it. For example, 12 + "hello" will give "12hello" as output.)
-- -> Subtraction
-* -> Multiplication
-/ -> Division
-% -> Modulus (Remainder)
-** -> Exponentiation (Power) (e.g., 2 ** 3 results in 8)
-+= -> Addition Assignment
--= -> Subtraction Assignment
-*= -> Multiplication Assignment
-/= -> Division Assignment
-%= -> Modulus Assignment
-**= -> Exponentiation Assignment
+// 1. Assignment Operators
+// Used to assign values to variables.
+let a = 10; // Assigns 10 to a
 
--> Increment/Decrement Operators:
-++ -> Increment (Increases the value of a variable by 1)
--- -> Decrement (Decreases the value of a variable by 1)
-(Note: Can be used as prefix (++x, --x) or postfix (x++, x--), with differences in evaluation order.)
+// Compound assignment operators
+let b = 5;
+b += 2; // Equivalent to b = b + 2
+b -= 1; // Equivalent to b = b - 1
+b *= 3; // Equivalent to b = b * 3
+b /= 2; // Equivalent to b = b / 2
+b %= 2; // Equivalent to b = b % 2
+b **= 2; // Equivalent to b = b ** 2
+console.log("Assignment Operators:", a, b);
 
--> Comparison Operators:
-(Used to compare between two entities.)
->= -> Greater than or equal to
-<= -> Less than or equal to
->  -> Greater than
-<  -> Less than
-!= -> Not equal to
-== -> Equal to
-=== -> Strictly equal to
-(The strict equality operator compares both the values and the data types. For example, 5 === 5 returns true. However, comparing 5 == "5" now returns false because the values are equal, but the data type is different.)
-!== -> Strictly not equal to
-(For the strict inequality operator to return false, the compared values have to have the same value and the same data type. For example, 5 !== 5 returns false.)
+// ===========================================================
+// 2. Arithmetic Operators
+// Perform mathematical operations.
+let x = 10;
+let y = 3;
+console.log("Addition:", x + y); // 13
+console.log("Subtraction:", x - y); // 7
+console.log("Multiplication:", x * y); // 30
+console.log("Division:", x / y); // 3.33...
+console.log("Modulus (Remainder):", x % y); // 1
+console.log("Exponentiation:", x ** y); // 1000
 
--> Logical Operators:
-&& -> AND (Returns true if both operands are true.)
-|| -> OR (Returns true if at least one operand is true.)
-!  -> NOT (Inverts the truth value.)
+// Special case with strings
+console.log("String Concatenation:", "Hello" + " World!");
 
--> Bitwise Operators:
-& -> AND
-| -> OR
-^ -> XOR
-~ -> NOT
-<< -> Left Shift
->> -> Right Shift
->>> -> Zero-fill Right Shift
+// ===========================================================
+// 3. Increment/Decrement Operators
+// Increase or decrease a value by 1.
+let count = 5;
+console.log("Post-increment:", count++); // Returns 5, then increments to 6
+console.log("After Post-increment:", count); // 6
+console.log("Pre-increment:", ++count); // Increments to 7, then returns 7
 
--> Type Operators:
-typeof -> Returns the data type of a variable or expression. For example, typeof "hello" returns "string".
-instanceof -> Checks if an object is an instance of a specific class or constructor. For example, obj instanceof Array.
+let count2 = 5;
+console.log("Post-decrement:", count2--); // Returns 5, then decrements to 4
+console.log("After Post-decrement:", count2); // 4
+console.log("Pre-decrement:", --count2); // Decrements to 3, then returns 3
 
--> Ternary Operator:
-condition ? expr1 : expr2
-(Evaluates the condition; if true, returns expr1; otherwise, returns expr2.)
+// ===========================================================
+// 4. Comparison Operators
+// Compare two values and return a boolean (true/false).
+console.log("Equal (==):", 5 == "5"); // true (type coercion)
+console.log("Strictly Equal (===):", 5 === "5"); // false (no type coercion)
+console.log("Not Equal (!=):", 5 != "5"); // false
+console.log("Strictly Not Equal (!==):", 5 !== "5"); // true
+console.log("Greater than (>):", 10 > 5); // true
+console.log("Less than (<):", 10 < 5); // false
+console.log("Greater than or equal (>=):", 10 >= 10); // true
+console.log("Less than or equal (<=):", 10 <= 5); // false
 
+// ===========================================================
+// 5. Logical Operators
+// Combine multiple conditions.
+console.log("AND (&&):", true && false); // false
+console.log("OR (||):", true || false); // true
+console.log("NOT (!):", !true); // false
+
+// ===========================================================
+// 6. Bitwise Operators
+// Perform operations on binary representations.
+console.log("Bitwise AND (&):", 5 & 1); // 1 (0101 & 0001 = 0001)
+console.log("Bitwise OR (|):", 5 | 1); // 5 (0101 | 0001 = 0101)
+console.log("Bitwise XOR (^):", 5 ^ 1); // 4 (0101 ^ 0001 = 0100)
+console.log("Bitwise NOT (~):", ~5); // -6 (~0101 = 1010 in 2's complement)
+console.log("Left Shift (<<):", 5 << 1); // 10 (0101 << 1 = 1010)
+console.log("Right Shift (>>):", 5 >> 1); // 2 (0101 >> 1 = 0010)
+console.log("Zero-fill Right Shift (>>>):", 5 >>> 1); // 2 (0101 >>> 1 = 0010)
+
+// ===========================================================
+// 7. Type Operators
+// Determine types or instances.
+console.log("typeof operator:", typeof "Hello"); // "string"
+console.log("instanceof operator:", [] instanceof Array); // true
+
+// ===========================================================
+// 8. Ternary Operator
+// A shorthand for if-else.
+let age = 20;
+let canVote = age >= 18 ? "Yes" : "No";
+console.log("Can Vote:", canVote);
+
+// ===========================================================
+// Summary
+/*
+- Assignment operators assign values to variables.
+- Arithmetic operators handle basic mathematical operations.
+- Increment/Decrement operators increase or decrease a value by 1.
+- Comparison operators compare values and return booleans.
+- Logical operators combine multiple conditions.
+- Bitwise operators work at the binary level.
+- Type operators determine the type or instance of a value.
+- The ternary operator is a compact form of conditional statements.
 */
